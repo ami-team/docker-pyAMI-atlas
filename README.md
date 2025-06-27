@@ -106,7 +106,6 @@ docker run -it \
 | `B64_USER_PROXY`  | **(optional)** Base64-encoded X.509 proxy certificate content.              |
 | `AMI_LOGIN`       | **(optional)** AMI login username.                                          |
 | `AMI_PASSWORD`    | **(optional)** AMI login password.                                          |
-| `X509_USER_PROXY` | **(internal)** Automatically set to `/tmp/x509up_u$(id -u)` in the container. |
 **Note:**
 - If both a proxy certificate (`B64_USER_PROXY`) and login credentials are provided, the proxy takes precedence.
 - The proxy is written to `/tmp/x509up_u$(id -u)` inside the container, as required by AMI.
