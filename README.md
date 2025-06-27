@@ -108,5 +108,4 @@ docker run -it \
 | `AMI_PASSWORD`    | **(optional)** AMI login password.                                          |
 **Note:**
 - If both a proxy certificate (`B64_USER_PROXY`) and login credentials are provided, the proxy takes precedence.
-- The proxy is written to `/tmp/x509up_u$(id -u)` inside the container, as required by AMI.
 - In daemon mode, authentication is only performed at container startup.
